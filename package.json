@@ -1,0 +1,21 @@
+{
+  "name": "task-timer-site",
+  "private": true,
+  "description": "A simple task timer website.",
+  "homepage": "tasktimer.robertoaleman.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertoJ/task-timer-site.git"
+  },
+  "keywords": [
+    "task",
+    "timer",
+    "site"
+  ],
+  "author": "Roberto Aleman Jr.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobertoJ/task-timer-site/issues"
+  },
+  "devDependencies": {}
+}
