@@ -124,11 +124,12 @@ module.exports = function (grunt) {
     // The default task will be to lint everything.
     grunt.registerTask('default', 'jshint');
     
-    var baseTasks = ['jshint', 'clean:remove', 'copy'];
+    // Create a build.
+    grunt.registerTask('build', 'Create a new build.', ['jshint', 'clean:remove', 'copy']);
     
     // Deploy to localhost.
-    grunt.registerTask('deploy', 'Deploy to localhost.', baseTasks.slice(0));
+    grunt.registerTask('deploy', 'Deploy to localhost.', ['connect', 'watch']);
     
     // Package.
-    grunt.registerTask('package', 'Package the site.', baseTasks.slice(0));
+    grunt.registerTask('package', 'Package the site.', ['build']);
 };
