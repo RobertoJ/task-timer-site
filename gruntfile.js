@@ -130,5 +130,5 @@ module.exports = function (grunt) {
     grunt.registerTask('deploy', 'Deploy to localhost.', baseTasks.slice(0));
     
     // Package.
-    grunt.registerTask('package', 'Package the site.', baseTasks.slice(0))
+    grunt.registerTask('package', 'Package the site.', baseTasks.slice(0));
 };
