@@ -67,6 +67,22 @@ module.exports = function (grunt) {
             }
         },
         /*
+         * grunt-contrib-sass configuration.
+         */
+        sass: {
+            dist: {
+                options: {
+                    style: 'compressed',
+                    sourcemap: 'none',
+                    unixNewlines: true,
+                    trace: true
+                },
+                files: {
+                    'index.css': 'index.scss'
+                }
+            }
+        },
+        /*
          * grunt-contrib-uglify configuration.
          */
         uglify: {
